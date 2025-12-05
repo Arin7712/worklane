@@ -1,11 +1,11 @@
-import { Button } from "@/components/ui/button"
+import { Button, buttonVariants } from "@/components/ui/button"
 import Link from "next/link";
 
 function Hero1() {
   return (
     <div className="w-full">
       <div className="container flex items-center justify-center h-screen lg:mx-auto">
-        <div className="flex gap-8 items-center justify-center flex-col">
+        <div className="flex gap-8 items-center justify-center flex-col md:w-full w-[90%]">
           <div className="flex gap-4 flex-col items-center">
             <h1 className="text-5xl md:text-6xl max-w-lg align-middle tracking-tighter text-center font-regular">
               We streamline your work lane.
@@ -18,11 +18,9 @@ function Hero1() {
             </p>
           </div>
           <div className="flex flex-row gap-3">
-            <Button size="lg">
-              <Link href="/sign-up">
+              <Link href="/sign-up" className={buttonVariants()}>
               Sign up
               </Link>
-            </Button>
             <Button size="lg" variant="outline">
               Get Started
             </Button>

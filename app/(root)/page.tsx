@@ -5,7 +5,6 @@ const page = () => {
   return (
     <div>
       <Hero1/>
-      <SignupForm/>
     </div>
   )
 }
